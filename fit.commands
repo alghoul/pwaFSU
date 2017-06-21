@@ -1,0 +1,12 @@
+set input 1 minuit.input
+
+
+set err 0.5
+set str 2
+migrad 999999 0.05
+improve
+simplex 999999 0.01
+migrad 999999 0.05
+call fcn 3
+save
+exit
